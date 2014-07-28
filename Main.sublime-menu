@@ -1,0 +1,18 @@
+[
+  {
+    "id"       : "tools",
+    "children" : [
+      {
+        "id"       : "sass_cleaner",
+        "caption"  : "SASS Cleaner",
+        "children" : [
+          {
+            "id"      : "clean",
+            "caption" : "Clean",
+            "command" : "sass_cleaner"
+          }
+        ]
+      }
+    ]
+  }
+]
