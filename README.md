@@ -65,10 +65,24 @@ body
   height: 100%
 
 ```
-
 ## Warning
 
 It won't remove the left empty lines from your code.
+
+## Specs
+
+### Install
+
+```bash
+sudo apt-get install python-pip
+sudo pip install mock
+```
+
+### Run
+
+```python
+python test/sass_cleaner_test.py
+```
 
 ## Licence
 
