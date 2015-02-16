@@ -8,6 +8,8 @@ def should_process(view):
 def get_regions(view):
   regions = view.find_all('[;{}]+|\n{3,}$')
 
+  print "[sass cleaner] found %s characters to clean.", len(regions)
+
   return list(reversed(regions))
 
 class SassCleanerCommand(sublime_plugin.EventListener):
