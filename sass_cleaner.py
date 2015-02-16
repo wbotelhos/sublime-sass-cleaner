@@ -6,7 +6,7 @@ def should_process(view):
   return extension == '.sass' and view.size() > 0
 
 def get_regions(view):
-  regions = view.find_all('[;{}]+|\n{3,}$')
+  regions = view.find_all('[;{}]+')
 
   print "[sass cleaner] found %s characters to clean.", len(regions)
 
