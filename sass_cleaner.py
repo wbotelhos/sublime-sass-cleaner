@@ -8,7 +8,7 @@ def should_process(view):
 def get_regions(view):
   regions = view.find_all('[;{}]+')
 
-  print "[sass cleaner] found %s characters to clean.", len(regions)
+  print "[sass cleaner] found %s lines to clean." % len(regions)
 
   return list(reversed(regions))
 
