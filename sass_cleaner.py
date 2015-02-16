@@ -8,7 +8,7 @@ def should_process(view):
 def get_regions(view):
   regions = view.find_all('[;{}]+|\n{3,}$')
 
-  return regions.reverse()
+  return list(reversed(regions))
 
 class SassCleanerCommand(sublime_plugin.EventListener):
   def on_pre_save(self, view):
