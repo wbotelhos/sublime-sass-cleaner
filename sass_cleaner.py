@@ -15,7 +15,7 @@ class SassCleanerCommand(sublime_plugin.EventListener):
     if not should_process(view):
       return
 
-    regions = get_regions()
+    regions = get_regions(view)
     edit    = view.begin_edit()
 
     for region in regions:
